@@ -12,6 +12,8 @@ Example:
 Input: ["+1A", "+3E", "-1A", "+4F", "+1A", "-3E"]
 Output: "1A"
 Explanation: 1A as it has been booked 2 times.
+
+https://leetcode.com/discuss/interview-question/421787/
 '''
 
 def hoteRoom(arr):
