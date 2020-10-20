@@ -13,18 +13,23 @@ Explanation:
 We can distribute the processes with loads [1, 2, 4] to the first server and [3, 5] to the second one,
 so that their total loads will be 7 and 8, respectively, and the difference of their loads will be equal to 1.
 
+https://leetcode.com/discuss/interview-question/356433/
 '''
+def checksum(arr,vn1):
+    print(vn1)
+
+
+
 def MinAbsDifferenceServerLoads (arr):
+    #Greedy solution Dynamic programming
+    #Bottom-up
     server1=[]
     server2=[]
 
-    for a in arr:
-        if sum(server1)>sum(server2):
-            server2.append(a)
-        else:
-            server1.append(a)
-            
-    print(abs(sum(server1)-sum(server2)))
+    validNumber1=sum(arr)//2
+    validNumber2=sum(arr)-validNumber1
+
+    checksum(arr,validNumber1)
 
 
 if __name__ == '__main__':
