@@ -23,13 +23,11 @@ def watering(can1,can2,flowers):
             if fillCan1+fillCan2>=flowers[i]:
                 break
             else:
-                print("reffillll")
                 refill+=1
                 break
         else:
         #left-right
             if fillCan1<flowers[i]:
-                print("reff")
                 refill+=1
                 fillCan1=can1
                 fillCan1-=flowers[i]
@@ -37,7 +35,6 @@ def watering(can1,can2,flowers):
                 fillCan1-=flowers[i]
         #right-left
             if fillCan2<flowers[len(flowers)-1-i]:
-                print("reffiii")
                 refill+=1
                 fillCan1=can1
                 fillCan2-=flowers[len(flowers)-1-i]
